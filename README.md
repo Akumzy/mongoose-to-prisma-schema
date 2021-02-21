@@ -2,6 +2,12 @@
 
 Convert your mongoose models to prisma schema
 
+## Installation
+
+```sh
+npm install mongoose-to-prisma-schema --save-dev
+```
+
 ## mongoose model
 
 ```ts
@@ -50,8 +56,6 @@ await ToPrismaSchame(
 ```
 
 ## Prisma Schema
-
-
 
 The mongoose model will be transform to this
 
