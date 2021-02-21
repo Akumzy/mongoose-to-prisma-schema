@@ -37,7 +37,7 @@ const ActivitySchema: Schema<ActivityModel> = new Schema({
 
 export default model<ActivityModel>("Activity", ActivitySchema)
 ```
-
+## Usage
 ```ts
 // ./index.ts
 import ToPrismaSchame from "mongoose-to-prisma-schema"
