@@ -1,0 +1,31 @@
+{
+  "name": "mongoose-to-prisma-schema",
+  "version": "0.0.1",
+  "description": "Convert mongoose model to prisma schema",
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "tsc -p ./tsconfig.json",
+    "watch": "tsc -p ./tsconfig.json -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akumzy/mongoose-to-prisma-schema.git"
+  },
+  "keywords": [
+    "cache",
+    "cron",
+    "database"
+  ],
+  "author": "Akuma Isaac Akuma <akumaisaacakuma@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Akumzy/mongoose-to-prisma-schema/issues"
+  },
+  "homepage": "https://github.com/Akumzy/mongoose-to-prisma-schema#readme",
+  "devDependencies": {
+    "@types/mongoose": "^5.10.3"
+  },
+  "files": [
+    "lib"
+  ]
+}
