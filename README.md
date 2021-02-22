@@ -49,7 +49,7 @@ await ToPrismaSchame(
 )
 
 // You could also do this to transform your entire mongoose models
-  await ToPrisma(
+  await ToPrismaSchame(
     Object.values(Activity.db.models).map((v) => v),
     join(process.cwd(), 'prisma/schema.prisma')
   )
@@ -57,7 +57,7 @@ await ToPrismaSchame(
 
 ## Prisma Schema
 
-The mongoose model will be transform to this
+The mongoose model will be transformed into this
 
 ```prisma
 //./prisma/schema.prisma
