@@ -42,6 +42,7 @@ export default model<ActivityModel>("Activity", ActivitySchema)
 // ./index.ts
 import ToPrismaSchame from "mongoose-to-prisma-schema"
 import Activity from "./models/Activity"
+import {join} from 'path'
 
 await ToPrismaSchame(
   [Activity]
@@ -50,7 +51,7 @@ await ToPrismaSchame(
 
 // You could also do this to transform your entire mongoose models
   await ToPrismaSchame(
-    Object.values(Activity.db.models).map((v) => v),
+    Object.values(Activity.db.models),
     join(process.cwd(), 'prisma/schema.prisma')
   )
 ```
